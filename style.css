@@ -1,0 +1,257 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+Theme Name: theme isun
+Theme URI: http://wordpress.or.id/
+Description: Theme pertam
+Author: Imron Hamzah
+Author URI: https://www.facebook.com/Hersan-tailors-textile-198095536897362/
+Version: 1.0
+*/
+body {
+  font-family: calibri, "Bitstream Charter", serif;
+  }
+#wrap {
+  width:1100px;
+  margin:auto;
+  padding:0px;
+  }
+  .title , .title a{
+  font-size: 20px;
+  text-decoration:none;
+  color:#000000;
+}
+
+#postmeta {
+  font-size:10px;
+  background: #808080;
+  padding:10px;
+}
+
+  #header {
+  height:140px;
+  
+  }
+  .blogtitle {
+	font-size:80px;
+    padding:0px 0 0 30px;
+    margin:0;
+          }
+		  
+	.description {
+    font-size:40px;
+    padding-left: 30px;
+    margin:0;
+    }
+	
+	#search {
+	  margin-left: 860px;
+	  margin-top: -5px;
+	}
+	
+    #menu {
+      margin-top:0px;
+      padding:0px;
+      background:#800040;
+      height:45px;
+      }
+	  
+#menu ul {
+  margin:0;
+  padding: 8px 10px;
+  list-style: none;
+  display: block;
+  }
+  
+  #menu li , #menu li  a{
+    float: left;
+    position: relative;
+    margin-right:6px;
+    color:#ff0000;
+    text-decoration: none;
+        }
+		
+          #maincontent {
+          margin-top:25px;
+          }
+		  
+          #menu {
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+#menu .menu-header,
+div.menu {
+  width: 100%;
+}
+
+#menu .menu-header ul,
+div.menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+#menu .menu-header li,
+div.menu li {
+  float: left;
+  position: relative;
+}
+
+#menu a {
+  color: #0000ff;
+  display: block;
+  line-height: 25px;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+#menu ul ul {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  float: left;
+  width: 180px;
+  z-index: 99999;
+}
+
+#menu ul ul li {
+  min-width: 180px;
+}
+
+#menu ul ul ul {
+  left: 30px;
+  top: 35px;
+}
+
+#menu ul ul a {
+  background: #ff0080;
+  line-height: 1em;
+  padding: 10px;
+  width: 180px;
+  height: auto;
+}
+
+#menu li:hover > a,
+#menu ul ul :hover > a {
+  background: #000000;
+  color: #fff;
+}
+
+#menu ul li:hover > ul {
+ display: block;
+}
+
+/* CONTEN BERITA*/
+
+             #content {
+              width:680px;
+			  float:left;
+          }
+		  
+		  
+		  
+/* SLIDER */
+
+#slidearea{
+  height: 200px; 
+  overflow: hidden;
+  margin:10px 0px 0px 0px;
+  padding:10px;
+  position: relative;
+  width:700px;
+  border:solid 1px #cccccc;
+  background: #ededed;
+}
+#gallerycover{
+  overflow: hidden;
+  margin:0px 20px 0px 0px;
+}
+.mygallery{
+  overflow: hidden;
+  position:relative;
+
+}
+.mytext img{
+  float:left;
+}
+.mytext{
+  position:relative;
+  margin:0px 5px 0px 5px;
+  height: 240px;
+  display:inline;
+  float:left;
+  color:#c4c4c4;
+  }
+.mytext h2 {
+  padding:0px;
+  margin:0px;
+  font-size: 18px ;
+  font-weight:bold;
+  font-style:italic;
+}
+.mytext h2 a:link,.mytext h2 a:visited{
+  color:#006b97;
+  text-decoration:none;
+}
+.mytext p{
+  padding:0px 0px;
+  color:#555;
+  font-size: 14px ;
+  line-height:20px;
+  font-style:italic;
+  text-shadow:1px 1px 0px #f6f6f6;
+}
+.nextb {
+  float:right;
+  }
+.prevb {
+  float:left;
+  }		  
+			  /* SIDEBAR */
+			  
+                #sidebar {
+                  width:200px;
+                  float:left;
+                  margin-left:800px;
+				  
+                  }
+                #sidebar ul {
+                  margin: 10px;
+                  padding: 10px;
+                  }
+                #sidebar li {
+                  list-style:none;
+                  font-size:12px;
+                  margin-bottom:10px;  
+                  }
+                #sidebar li a {
+                    text-decoration:none;
+                  }
+                #sidebar h3 {
+                    font-size:18px;
+                    margin: 0 0 10px 10px;
+                  }
+                  #lebar {
+                    margin-bottom:10px;
+					margin-left:45px;
+                    }
+                  #kiri {
+					background:#ffff00;
+                    width:300px;
+                    float:left;
+                    }
+                  #kanan {
+                    background:#ffff80;
+                    width:300px;
+                    float:left;
+                    }
+            #footer {
+            font-size:10px;
+            background: #804040;
+            text-align:center;
+            margin-top:20px;
+			padding: 10px;
+			 }
+  
