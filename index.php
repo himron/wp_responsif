@@ -25,7 +25,7 @@
 		 }
    </style>
    
-    <php if (is_home()) {
+    if (is_home()) {
 	wp_enqueue_script('jquery');
 	wp_enqueue_script('easing', get_stylesheet_directory_uri() . '/js/jquery.easing.1.1.js');
 	wp_enqueue_script('carousal', get_stylesheet_directory_uri() . '/js/jcarousel.js');
@@ -48,6 +48,8 @@
 				</div>
             </div>
 		 </div>
+		
+
        
 		 <div id="maincontent">
 			<div id="content">
@@ -73,42 +75,7 @@
 				});
 			});
 			</script>
-		/*untuk slider*/
-		<div id="slidearea">
-			<div id="gallerycover">
-				<div class="mygallery">
-				 <ul>
-					<?php 
-					$my_query = new WP_Query('showposts=5');
-					while ($my_query->have_posts()) : $my_query->the_post();
-					$do_not_duplicate = $post->ID;
-					?>
-					<li>
-						<div class="mytext">
-							<a href="<?php the_permalink() ?>">
-							<?php 
-							if ( has_post_thumbnail() ) {
-							the_post_thumbnail();
-							} else {
-							echo '<img src="'.get_bloginfo('template_url').'/images/thumbnail.png" alt="'.get_the_title().'" class="wp-post-image"/>';
-							}
-							?>
-							</a>
-							<h2><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
-							<p><?php the_content_rss('more_link_text', TRUE, '', 30); ?> 
-							<a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title(); ?>">read more..</a></p>
-        
-							<div class="slimeta">
-							<a href="#" class="prevb">&laquo; Previous</a><a href="#" class="nextb">Next &raquo;</a>
-							</div>
-						</div>     
-					</li>
-					<?php endwhile; ?>
-				 </ul>
-					<div class="clear"></div>        
-				</div>
-			</div>
-		</div>
+		
 				  <?php comments_template(); ?>
 			   <?php endwhile;?>
 			<?php endif;?>
@@ -136,7 +103,7 @@
                          </li>
                          <?php endif; ?>
                     </ul>
-               </div>
+				</div>
                     
             <div id="kanan">
                 <ul>

@@ -23,8 +23,8 @@ body {
 }
 
 #postmeta {
-  font-size:10px;
-  background: #808080;
+  font-size:14px;
+  background: #c0c0c0;
   padding:10px;
 }
 
@@ -215,7 +215,7 @@ div.menu li {
                   width:200px;
                   float:left;
                   margin-left:800px;
-				  
+				  margin-top: 10px;
                   }
                 #sidebar ul {
                   margin: 10px;
