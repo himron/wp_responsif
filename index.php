@@ -14,25 +14,17 @@
     wp_enqueue_script( 'comment-reply' );
     wp_head();
      ?>
-	
 	 
    <style type="text/css">
 	  #header {
-		 background : url(<?php header_image(); ?>);
+		 background : url(<?php header_image(); ?>); 
 		 }
 		 .blogtitle a, .description {
 		 color: <?php header_textcolor(); ?>
 		 }
    </style>
    
-    if (is_home()) {
-	wp_enqueue_script('jquery');
-	wp_enqueue_script('easing', get_stylesheet_directory_uri() . '/js/jquery.easing.1.1.js');
-	wp_enqueue_script('carousal', get_stylesheet_directory_uri() . '/js/jcarousel.js');
-}
-   
-</head>
-
+</head>   
 <body>
    <div id="wrap">
         <div id="header">
@@ -40,18 +32,10 @@
 			<p class="description"><?php bloginfo('description');?></p>
             <div id="menu">
                   <?php wp_nav_menu( array( 'container_class' => 'menu-header', 'theme_location' => 'primary' ) ); ?>
-				<div id="search">
-					<form action="<?php bloginfo('url');?>" method="get">
-					<input type="text" size="20" name="s"/>
-					<input type="submit" value="search"/>
-					</form>
-				</div>
             </div>
 		 </div>
-		
-
        
-		 <div id="maincontent">
+		<div id="maincontent">
 			<div id="content">
 			   <?php if ( have_posts() ) : ?>
 			   <?php while ( have_posts() ) : the_post(); ?>
@@ -62,20 +46,8 @@
 						<?php comments_popup_link('No Comments &raquo;', '1 Comment &raquo;', '% Comments &raquo;'); ?> 
 						<?php edit_post_link('Edit','','|'); ?>
 					 </div>
-			   </div>
-			<script type="text/javascript">
-				jQuery(function() {
-				jQuery(".mygallery").jCarouselLite({
-				btnNext: ".nextb",
-				btnPrev: ".prevb",
-				visible: 1,
-				speed: 2000,
-				auto: 3000,
-				easing: "backout"
-				});
-			});
-			</script>
-		
+				</div> 
+			</div>
 				  <?php comments_template(); ?>
 			   <?php endwhile;?>
 			<?php endif;?>
@@ -83,13 +55,13 @@
 			
         <div id="sidebar">
               <?php if ( is_active_sidebar( 'sidebar-lebar' ) ) : ?>  
-                <div id="lebar">
-                    <ul>          
+            <div id="lebar">
+                <ul>          
                      <?php dynamic_sidebar( 'sidebar-lebar' ); ?>    
-                    </ul>
-                </div>
+                </ul>
+            </div>
 			   <?php endif; ?>
-               <div id="kiri">
+            <div id="kiri">
                     <ul>
                     <?php if ( ! dynamic_sidebar( 'sidebar-kiri' ) ) : ?>
                          <li id="search" class="widget-container widget_search">
@@ -103,9 +75,9 @@
                          </li>
                          <?php endif; ?>
                     </ul>
-				</div>
+            </div>
                     
-            <div id="kanan">
+			<div id="kanan">
                 <ul>
                   <?php if ( ! dynamic_sidebar( 'sidebar-kanan' ) ) : ?>
 					<li id="meta" class="widget-container">
