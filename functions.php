@@ -32,20 +32,12 @@ function themegue_widgets() {
   register_nav_menus( array(
     'primary' => __( 'Navigasi Utama', 'themegue' ),
   ) );
-  
 define( 'HEADER_IMAGE_WIDTH', 1500 );
 define( 'HEADER_IMAGE_HEIGHT',140 );
 define( 'HEADER_TEXTCOLOR', '000000' );
 
-/*untuk gambar bacgroun belom bisa*/
-add_custom_background('','themegue_header_style' );
-add_action( 'widgets_init', 'themegue_widgets' );
-
-/* UNTUK UPLOAD IMAGE HEADER*/
-
 add_custom_image_header( '', 'themegue_header_style' );
 function themegue_header_style() {
-  
 echo '
 <style type="text/css">
 #headimg {
@@ -67,7 +59,8 @@ h1 a {
 </style>';
 }
 }
+add_custom_background('','themegue_header_style' );
+add_action( 'widgets_init', 'themegue_widgets' );
+ 
 ?>
-
-
 
