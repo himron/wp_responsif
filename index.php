@@ -2,18 +2,18 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-     <title>
-     <?php 
-        wp_title( '|', true, 'right' );
-      bloginfo( 'name' );
-     ?>
-     </title>
-     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-     <?php if ( is_singular() && get_option( 'thread_comments' ) )
-    wp_enqueue_script( 'comment-reply' );
-    wp_head();
-     ?>
+     	<title>
+     		<?php 
+        	wp_title( '|', true, 'right' );
+      		bloginfo( 'name' );
+		 ?>
+     	</title>
+     		<link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+     	<?php if ( is_singular() && get_option( 'thread_comments' ) )
+    	wp_enqueue_script( 'comment-reply' );
+    	wp_head();
+     	?>
 	 
    <style type="text/css">
 	  #header {
@@ -46,7 +46,7 @@
 						<?php comments_popup_link('No Comments &raquo;', '1 Comment &raquo;', '% Comments &raquo;'); ?> 
 						<?php edit_post_link('Edit','','|'); ?>
 					 </div>
-				</div> 
+			    </div> 
 			</div>
 				  <?php comments_template(); ?>
 			   <?php endwhile;?>
@@ -103,5 +103,5 @@
 			</div>
 
 	<?php wp_footer();?>
-   </body>
+</body>
 </html>
